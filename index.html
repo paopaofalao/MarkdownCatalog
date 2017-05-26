@@ -1,0 +1,24 @@
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+ 	  $("footer").remove();
+ 	  var body = $('<div id="body" style="float: left;width: 65%;position: absolute;left:30%;"></div>');
+      $("body").children().each(function(){
+      	if(this.tagName != 'SCRIPT'){
+      		body.append(this);
+      	}
+      });
+      $("body").append('<div id="category" style="float: left;width: 25%;position: fixed;height: 98%;overflow-y: auto;"></div>');
+      $("body").append(body);
+      $("h2,h3,h4,h5,h6").each(function(i,item){
+        var tag = $(item).get(0).localName;
+        $(item).attr("id","wow"+i);
+        $("#category").append('<a class="new'+tag+'" href="#wow'+i+'">'+$(this).text()+'</a></br>');
+        $(".newh2").css("margin-left",0);
+        $(".newh3").css("margin-left",20);
+        $(".newh4").css("margin-left",40);
+        $(".newh5").css("margin-left",60);
+        $(".newh6").css("margin-left",80);
+      });
+ });
+</script>
