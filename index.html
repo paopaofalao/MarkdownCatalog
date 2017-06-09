@@ -1,3 +1,6 @@
+<style type="text/css">
+#category a{text-decoration: none;vertical-align: baseline;color: #3269a0;font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",STHeiti,SimSun,"Segoe UI",AppleSDGothicNeo-Medium,'Malgun Gothic',Arial,freesans,sans-serif;font-size: 15px;line-height: 1.6;-webkit-font-smoothing: antialiased;}
+</style>
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script type="text/javascript">
  $(document).ready(function(){
@@ -8,7 +11,7 @@
       		body.append(this);
       	}
       });
-      $("body").append('<div id="category" style="float: left;width: 25%;position: fixed;height: 98%;overflow-y: auto;"></div>');
+      $("body").append('<div id="category" style="float: left;width: 25%;position: fixed;height: 98%;overflow-y: auto;left: 3%"></div>');
       $("body").append(body);
       $("h2,h3,h4,h5,h6").each(function(i,item){
         var tag = $(item).get(0).localName;
