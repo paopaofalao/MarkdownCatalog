@@ -1,0 +1,4 @@
+#body {float: left;width: 65%;position: absolute;left:30%;}
+#category {float: left;width: 25%;left:4%;position: fixed;height: 98%;overflow-y: auto;}
+#category a{text-decoration: none;vertical-align: baseline;color: #3269a0;font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",STHeiti,SimSun,"Segoe UI",AppleSDGothicNeo-Medium,'Malgun Gothic',Arial,freesans,sans-serif;font-size: 15px;line-height: 1.6;-webkit-font-smoothing: antialiased;}
+.markdown-body{max-width: none;}
